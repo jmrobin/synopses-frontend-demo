@@ -3,7 +3,8 @@
 import Axios from 'axios';
 import bcrypt from 'bcryptjs';
 
-const apiUrl = 'http://localhost:3001/authors/username/';
+// const apiUrl = 'http://localhost:3001/authors/username/';
+const apiUrl = 'https://synopses-backend.herokuapp.com/authors/username/';
 
 export async function login(username, password) {
     const { data } = await Axios.get(apiUrl + username);

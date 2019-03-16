@@ -2,7 +2,8 @@
 
 import Axios from 'axios';
 
-const apiUrl = 'http://localhost:3001/versions';
+// const apiUrl = 'http://localhost:3001/versions';
+const apiUrl = 'https://synopses-backend.herokuapp.com/versions';
 
 export function getVersion (id) {
     return Axios.get(apiUrl + '/' + id);

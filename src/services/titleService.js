@@ -2,7 +2,8 @@
 
 import Axios from 'axios';
 
-const apiUrl = 'http://localhost:3001/titles';
+// const apiUrl = 'http://localhost:3001/titles';
+const apiUrl = 'https://synopses-backend.herokuapp.com/titles';
 
 export function getTitles () {
     return Axios.get(apiUrl);
