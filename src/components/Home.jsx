@@ -7,7 +7,7 @@ class Home extends React.Component {
     render () {
         return (
             <Jumbotron>
-                <p className="lead">Welcome to the Synopses demo version 0.7.0</p>
+                <p className="lead">Welcome to the Synopses demo version 0.7.1</p>
             </Jumbotron>
         );
     }
