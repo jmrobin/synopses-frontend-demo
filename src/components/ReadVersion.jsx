@@ -67,11 +67,11 @@ class ReadVersion extends React.Component {
                         <DropdownMenu>
                             {sentence.nexts.map((n, position) => {
                                 return (
-                                    <DropdownItem key={position}>
-                                        <Link to={'/read-version/' + n.nextVersionId}>
-                                            {n.nextSentenceContents}
-                                        </Link>
-                                    </DropdownItem>
+                                    <Link to={'/read-version/' + n.nextVersionId} key={position}>
+                                        <DropdownItem>                                        
+                                            {n.nextSentenceContents}                                        
+                                        </DropdownItem>
+                                    </Link>
                                 );
                             })
                             }
